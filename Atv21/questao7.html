@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 7</title>
+</head>
+<body>
+
+    <script>
+     
+        // contador 
+         let cont = 1 
+         let soma = 0
+    
+       // enquanto o contador(0) for menor ou igual a 6 ele repete ação até 6
+         while(cont <= 6) {
+            let nota = parseInt (prompt("Informe as notas do aluno : nota" + cont))
+    
+            if(nota >=0 && nota <=10 ) {
+                
+                cont ++ // toda vez que while se repetir adiciona mais um 
+                soma += nota // + está somando os valores das notas = está definindo a soma a partir da nota  
+            } 
+               //caso a nota estiver errada, pede para digitar novamente 
+            else {
+                alert ("Nota inválida! Digite um valor entre 0 e 10.")
+            }
+         }
+          
+         // aqui faz o calculo da média e exibe para o usuario, definindo duas casas decimais 
+         let media = soma / 6 
+          document.write(`Sua média final é:`+ media.toFixed(2)) 
+          
+        </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+</head>
+<body>
+
+    <script>
+        let dento = 0; 
+        let fora = 0;   
+    
+        //loop vai de 1 até 10
+        for (let i = 1; i <= 10; i++) 
+        {let val = parseInt(prompt("Digite o " + i + "º valor:"));
+    
+            //determina que o número inserido pelo usuario precisa estar entre 24 e 48, caso não estiver será somado na variavel fora
+            if (val >= 24 && val <= 48) {
+                dentro++; //adiciona número se estiver entre 24 e 48 
+            
+            } else {
+                fora++; //adiciona número se estiver fora
+            }
+        }
+    
+        document.write("Quantidade de números entre 24 e 48: " + dentro + "<br>");
+        document.write("Quantidade de números fora do intervalo de 24 a 48: " + fora + "<br>");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<body>
+
+    <script>
+
+            let aprovados = 0;
+            let escolha = "S";
+      
+            // toUpperCase transforma letras em maiuscula, perseFloat é para numeros quebrados, === só permite informação exatamente iguais, (está pedindo que escolha seja maiuscula, caso for prosseguir)
+            while (escolha.toUpperCase() === "S") {
+              let n1 = parseFloat(prompt("Digite a primeira nota:"));
+              let n2 = parseFloat(prompt("Digite a segunda nota:"));
+             
+            //aqui vai ser calculado a média 
+              let media = (n1 + n2) / 2;
+            
+            //caso a média for maior ou = aprovado, caso não for reprovado 
+              if (media >= 9.5) {
+                aprovados++; //somando a quantidade de aprovados 
+                alert("Média: " + media.toFixed(2) + " Aprovado");
+              } 
+              
+              else {
+                alert("Média: " + media.toFixed(2) + " Reprovado");
+              }
+
+              //aqui o usuário escolhe S ou N, permitindo continuar ou não o loop de médias de alunos 
+              escolha = prompt("Calcular a média de outro aluno? (S/N)");
+            }
+
+             //exibe quantos alunos foram aprovados 
+            document.write("<br> Total de alunos aprovados: " + aprovados);
+
+            //tudo ocorre dentro do while pois ele define o loop final de escolha, document está fora do while pois não participa do loop, só informa sobre a quantidade de alunos aprovados calculada no If 
+          
+
+    </script>
+    
+</body>
+</html>

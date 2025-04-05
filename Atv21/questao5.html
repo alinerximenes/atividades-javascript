@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5</title>
+</head>
+
+<body>
+
+    <script>
+
+        let n1 = parseInt(prompt("Digite o primeiro número (Maior que o segundo número): "))
+        let n2 = parseInt(prompt("Digite o segundo número: "))
+
+        let soma = 0
+        let numeros = 0
+
+        for (n = n1; n <= n2; n++) {
+
+            while (n1 < n2 ){
+                n1 = (prompt("Primeiro número incorreto! Coloque o primeiro número maior que o segundo: "))
+            }
+
+            soma += n; // + adicionando um a soma = está definindo a soma a partir de n 
+            numeros ++; // ++ soma a quantidade de números e não o valor dos mesmos
+            var media = soma / numeros
+        }
+        
+            document.write("A média do número " + n1 + " e " + n2 + " é: " + media + "<br>")
+
+    </script>
+
+</body>
+</html>
